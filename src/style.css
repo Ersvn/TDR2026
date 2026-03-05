@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+#ui-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid #ffd700;
+}
+
+.tower-card {
+  width: 80px;
+  height: 100px;
+  background: #333;
+  border: 1px solid #555;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  transition: 0.2s;
+}
+
+.tower-card:hover { border-color: #ffd700; scale: 1.05; }
+.tower-card.selected { border-color: #00ff00; box-shadow: 0 0 10px #00ff00; }
